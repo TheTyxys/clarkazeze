@@ -1,23 +1,23 @@
 -- nixuz.
 
+
 if _G.version == "user" then
-    repeat
-        wait()
-    until game:IsLoaded()
-
-    setfpscap(144)
-
-    local L_144_ = game:GetService("ReplicatedStorage")
-    local L_145_ = game:GetService("HttpService")
-    local L_146_ = game:GetService("UserInputService")
-    local L_147_ = game:GetService("Lighting")
-    local L_148_ = game:GetService("TweenService")
-    local L_149_ = game:GetService("Players")
-    local L_150_ = workspace:FindFirstChild("settings") or Instance.new("Folder", workspace)
-    L_150_.Name = "settings"
-    local L_151_ = L_149_.LocalPlayer
-    local L_152_ = workspace.CurrentCamera
-    local L_153_ = L_151_:GetMouse()
+local L_1_ = false;
+if game.PlaceId == 8065776277 and L_1_ then
+	repeat
+		wait()
+	until game:IsLoaded()
+	setfpscap(144)
+	local L_144_ = game:GetService("ReplicatedStorage")
+	local L_145_ = game:GetService("HttpService")
+	local L_146_ = game:GetService("UserInputService")
+	local L_147_ = game:GetService("Lighting")
+	local L_148_ = game:GetService("TweenService")
+	local L_149_ = game:GetService("Players")
+	local L_150_ = workspace.settings;
+	local L_151_ = L_149_.LocalPlayer;
+	local L_152_ = workspace.CurrentCamera;
+	local L_153_ = L_151_:GetMouse()
 	local L_154_ = {}
 	local L_155_ = {
 		4,
@@ -21676,3 +21676,4 @@ L_28_.RenderStepped:Connect(function(L_1699_arg0)
 	end
 end)    
 end
+
